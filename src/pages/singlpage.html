@@ -225,7 +225,7 @@
     </div>
     </div>
     </div>
-    </div>
+   
     <div class="mt-7 mx-auto px-4 justify-between flex w-full items-center">
 
       <div class="flex justify-start items-center ">
@@ -635,15 +635,13 @@
     </div>
 
 
-
-
   </header>
 
 
   <div id="overlay" class="fixed top-[190px] left-0 w-full h-[calc(100%-70px)] bg-black bg-opacity-50 hidden z-10">
   </div>
 
-  <main>
+  <main class="relative">
 
     <div class="flex justify-between py-8 mx-8">
       <ul class="flex gap-4 items-center text-gray-400 text-xs">
@@ -1517,9 +1515,11 @@
 </div>
 
 
-   
 
   </main>
+
+
+ 
 
 
  <footer class="hidden lg:block border-t-[1px] w-full mt-12 border-[rgba(0,0,0,0.15)] ">
@@ -1733,35 +1733,12 @@
 
     </div>
     <hr class="mt-8 mx-16 ">
-
+ </footer>
 
 
 
 <script>
-  const slider = document.getElementById('slider');
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
-
-const itemWidth = 200; // باید با min-w یکی باشه
-let currentPosition = 0;
-
-nextBtn.addEventListener('click', () => {
-  const maxScroll =
-    slider.scrollWidth - slider.parentElement.offsetWidth;
-
-  if (Math.abs(currentPosition) < maxScroll) {
-    currentPosition -= itemWidth;
-    slider.style.transform = `translateX(${currentPosition}px)`;
-  }
-});
-
-prevBtn.addEventListener('click', () => {
-  if (currentPosition < 0) {
-    currentPosition += itemWidth;
-    slider.style.transform = `translateX(${currentPosition}px)`;
-  }
-});
-
+ 
 
 
 
